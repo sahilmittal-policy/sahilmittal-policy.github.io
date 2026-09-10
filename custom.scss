@@ -1,0 +1,31 @@
+/*-- scss:rules --*/
+
+body {
+  line-height: 1.65;
+}
+
+.navbar {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.about-entity .about-image {
+  max-width: 300px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.about-contents {
+  max-width: 34rem;
+}
+
+.quarto-title-block .subtitle {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 1.05rem;
+  color: #666;
+}
+
+.page-footer {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 1rem;
+  font-size: 0.85rem;
+}

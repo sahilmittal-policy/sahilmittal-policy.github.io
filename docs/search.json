@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "I’m interested in how people move between education and work, and in what policy can actually do about it."
+  },
+  {
+    "objectID": "research.html#current-questions",
+    "href": "research.html#current-questions",
+    "title": "Research",
+    "section": "Current questions",
+    "text": "Current questions\nHow do students choose fields of study, and how wrong are they about the returns? Field choice is one of the highest-stakes decisions a young person makes, usually with poor information about what different paths pay and how that changes over a career.\nWhat happens when a new institution enters a labor market with no reputation? I spent three years on the operating side of this problem at Plaksha — persuading firms to hire from a university with no placement history. The question of how employer beliefs about unfamiliar institutions form, and what shifts them, is one I’d like to study properly rather than only improvise against.\nWhich interventions in the school-to-work transition survive contact with evidence? Careers services, internships, employer partnerships and signalling mechanisms are widely funded and unevenly evaluated."
+  },
+  {
+    "objectID": "research.html#approach",
+    "href": "research.html#approach",
+    "title": "Research",
+    "section": "Approach",
+    "text": "Approach\nI’m building toward research that takes identification seriously — natural experiments, administrative data, and causal inference rather than descriptive correlation. This year that means econometrics coursework and getting fluent in R and Python. I’ll post work here as it develops."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Sahil Mittal",
+    "section": "",
+    "text": "I’m a first-year MSPPM-DA student at Carnegie Mellon’s Heinz College, working on empirical questions in labor economics and education policy.\nBefore Heinz, I founded and ran the Office of Corporate Partnerships and Careers at Plaksha University — building employer relationships and placement operations from scratch for a new institution with no track record to trade on. That work is what pushed me toward studying labor markets rather than operating inside one.\nEarlier: gravitational-wave parameter estimation at IIT Madras on an IAS Summer Research Fellowship, and a B.Tech in Electrical and Electronics Engineering from NIT Trichy."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "In progress\nAn analysis of my own Goodreads library — several years of ratings, dates and page counts. Partly an excuse to get fluent in pandas on data I actually care about, partly curiosity about whether my reading has changed in ways I’d notice without measuring.\nRepository\n\nMore projects will appear here as coursework and independent work produce things worth showing."
+  },
+  {
+    "objectID": "projects.html#reading-data-analysis",
+    "href": "projects.html#reading-data-analysis",
+    "title": "Projects",
+    "section": "",
+    "text": "In progress\nAn analysis of my own Goodreads library — several years of ratings, dates and page counts. Partly an excuse to get fluent in pandas on data I actually care about, partly curiosity about whether my reading has changed in ways I’d notice without measuring.\nRepository\n\nMore projects will appear here as coursework and independent work produce things worth showing."
+  }
+]

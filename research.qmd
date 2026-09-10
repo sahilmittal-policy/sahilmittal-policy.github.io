@@ -1,0 +1,31 @@
+---
+title: "Research"
+---
+
+I'm interested in how people move between education and work, and in what
+policy can actually do about it.
+
+## Current questions
+
+**How do students choose fields of study, and how wrong are they about the
+returns?** Field choice is one of the highest-stakes decisions a young person
+makes, usually with poor information about what different paths pay and how
+that changes over a career.
+
+**What happens when a new institution enters a labor market with no
+reputation?** I spent three years on the operating side of this problem at
+Plaksha — persuading firms to hire from a university with no placement history.
+The question of how employer beliefs about unfamiliar institutions form, and
+what shifts them, is one I'd like to study properly rather than only
+improvise against.
+
+**Which interventions in the school-to-work transition survive contact with
+evidence?** Careers services, internships, employer partnerships and signalling
+mechanisms are widely funded and unevenly evaluated.
+
+## Approach
+
+I'm building toward research that takes identification seriously — natural
+experiments, administrative data, and causal inference rather than descriptive
+correlation. This year that means econometrics coursework and getting fluent
+in R and Python. I'll post work here as it develops.

@@ -1,0 +1,27 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Sahil Mittal"
+  description: "Labor economics and education policy"
+  navbar:
+    right:
+      - href: index.qmd
+        text: Home
+      - href: research.qmd
+        text: Research
+      - href: projects.qmd
+        text: Projects
+      - text: CV
+        href: files/sahil-mittal-cv.pdf
+      - icon: github
+        href: https://github.com/sahilmittal-policy
+  page-footer:
+    center: "Built with Quarto"
+
+format:
+  html:
+    theme: [litera, custom.scss]
+    css: styles.css
+    toc: false

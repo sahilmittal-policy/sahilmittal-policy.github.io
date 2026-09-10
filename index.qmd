@@ -1,0 +1,33 @@
+---
+title: "Sahil Mittal"
+subtitle: "Labor economics and education policy"
+about:
+  template: trestles
+  image: profile.jpg
+  image-shape: rounded
+  links:
+    - icon: github
+      text: GitHub
+      href: https://github.com/sahilmittal-policy
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/sahil-mittal-594925146/
+    - icon: envelope
+      text: Email
+      href: mailto:sahilmit@andrew.cmu.edu
+    - icon: file-earmark-text
+      text: CV
+      href: files/sahil-mittal-cv.pdf
+---
+
+I'm a first-year MSPPM-DA student at Carnegie Mellon's Heinz College, working on
+empirical questions in labor economics and education policy.
+
+Before Heinz, I founded and ran the Office of Corporate Partnerships and Careers
+at Plaksha University — building employer relationships and placement operations
+from scratch for a new institution with no track record to trade on. That work is
+what pushed me toward studying labor markets rather than operating inside one.
+
+Earlier: gravitational-wave parameter estimation at IIT Madras on an IAS Summer
+Research Fellowship, and a B.Tech in Electrical and Electronics Engineering from
+NIT Trichy.

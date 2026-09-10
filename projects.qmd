@@ -1,0 +1,19 @@
+---
+title: "Projects"
+---
+
+## Reading data analysis
+
+*In progress*
+
+An analysis of my own Goodreads library — several years of ratings, dates and
+page counts. Partly an excuse to get fluent in pandas on data I actually care
+about, partly curiosity about whether my reading has changed in ways I'd notice
+without measuring.
+
+[Repository](https://github.com/sahilmittal-policy/goodreads-reading-analysis)
+
+---
+
+More projects will appear here as coursework and independent work produce
+things worth showing.
