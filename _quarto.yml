@@ -22,6 +22,6 @@ website:
 
 format:
   html:
-    theme: [litera, custom.scss]
+    theme: [litera, custom.scss, styles/project.scss]
     css: styles.css
     toc: false

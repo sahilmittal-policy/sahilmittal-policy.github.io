@@ -2,6 +2,26 @@
 title: "Projects"
 ---
 
+## Fixing Boston's busiest equity corridors
+
+*2nd place, MIT Policy Hackathon 2025*
+
+[![](/images/mbta/social-card.png){fig-alt="Fixing Boston's Busiest Equity Corridors"}](/projects/mbta-equity-corridors.html)
+
+Every MBTA bus route, ranked by transit dependence weighted by ridership. The
+three highest-need corridors turned out to be among the slowest in the network.
+We modelled a $6.5M bus-priority package returning 1.23 million rider-hours a
+year, paying back in under two years — then rebuilt the whole analysis as a
+tested Python package after the original notebooks were lost.
+
+[Read the full project →](/projects/mbta-equity-corridors.html)
+
+[Repository](https://github.com/sahilmittal-policy/mbta-equity-corridors) ·
+[Policy memo](https://github.com/sahilmittal-policy/mbta-equity-corridors/blob/main/docs/policy-memo.md) ·
+[Deck](/files/TartanSparks-MIT-Policy-Hackathon-2025.pdf)
+
+---
+
 ## Reading data analysis
 
 *In progress*

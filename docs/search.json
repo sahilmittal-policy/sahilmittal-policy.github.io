@@ -21,6 +21,48 @@
     "text": "Approach\nI’m building toward research that takes identification seriously — natural experiments, administrative data, and causal inference rather than descriptive correlation. This year that means econometrics coursework and getting fluent in R and Python. I’ll post work here as it develops."
   },
   {
+    "objectID": "projects/mbta-equity-corridors.html#the-problem",
+    "href": "projects/mbta-equity-corridors.html#the-problem",
+    "title": "Fixing Boston’s Busiest Equity Corridors",
+    "section": "The problem",
+    "text": "The problem\nGreater Boston’s bus network carries the region’s most transit-dependent riders on some of its slowest and least reliable services. Black bus riders in Boston spend roughly 64 more hours a year in transit than white riders.\nOver a weekend at the MIT Policy Hackathon, my teammates Anushri Gade and Rahul Tejannavar and I asked three questions: which routes does that penalty fall hardest on, can it be fixed without a capital megaproject, and what would fixing it cost?"
+  },
+  {
+    "objectID": "projects/mbta-equity-corridors.html#how-we-found-the-corridors",
+    "href": "projects/mbta-equity-corridors.html#how-we-found-the-corridors",
+    "title": "Fixing Boston’s Busiest Equity Corridors",
+    "section": "How we found the corridors",
+    "text": "How we found the corridors\nRanking routes by need alone rewards lightly-used shuttles through very poor neighbourhoods. Ranking by ridership alone rewards busy routes through affluent ones. We needed something that asked a blunter question: where are the most equity-weighted riders?\nSo we built a Transit Dependence Index for every route in the network — population-weighted shares of zero-vehicle households, residents below 200% of the poverty line, non-white residents, and transit commuters, measured within an 800 metre walkshed of every stop and normalised against the system average. Then we multiplied it by ridership.\n\n\n\nRoutes 28, 23 and 66 sit furthest out on both axes at once — that is what the product picks up.\n\n\nThree routes — 28, 23 and 66 — came out first, second and third in the entire MBTA bus network. Then we checked what service those riders actually get.\n\nAll three run longer than the median peak runtime. Route 66 takes nearly 49 minutes at peak with the worst on-time performance in the group.\n\nThe more you depend on the bus, the more you are punished by slow and unreliable service."
+  },
+  {
+    "objectID": "projects/mbta-equity-corridors.html#why-its-a-labour-market-problem",
+    "href": "projects/mbta-equity-corridors.html#why-its-a-labour-market-problem",
+    "title": "Fixing Boston’s Busiest Equity Corridors",
+    "section": "Why it’s a labour-market problem",
+    "text": "Why it’s a labour-market problem\nUsing LEHD LODES employment microdata, we found the corridor is itself a major job centre — over 69,000 health and social assistance jobs sit inside it — and yet only about one quarter of the jobs held by corridor residents are located there. Residents work at more than 12,000 distinct workplace blocks.\n\nMost riders are passing through to somewhere else, usually via a rail transfer. That reframes a local transit intervention as a regional access problem, and it is the finding the recommendation rests on."
+  },
+  {
+    "objectID": "projects/mbta-equity-corridors.html#what-it-costs-and-what-it-returns",
+    "href": "projects/mbta-equity-corridors.html#what-it-costs-and-what-it-returns",
+    "title": "Fixing Boston’s Busiest Equity Corridors",
+    "section": "What it costs, and what it returns",
+    "text": "What it costs, and what it returns\nNot a megaproject. Dedicated lanes on congested segments, transit signal priority, queue jumps at bottlenecks, far-side stops and stop consolidation — tools Boston already deploys, at roughly $0.5M a mile. Ten miles of treatment, $6.5 million all in.\nThe model keeps three benefit buckets separate, because they are not the same kind of money:\n\n\n\n\n\n\n\n\nBucket\nPer year\nIn the payback?\n\n\n\n\nNet operating savings, after reinvesting half into service\n$3.16M\n✅\n\n\nNew rail fare revenue from better bus–rail feeding\n$0.56M\n✅\n\n\nRider time value (1.23M hours at $10–20/hr)\n$12.3–24.5M\n❌\n\n\n\nRider time is a societal benefit, not agency cash. Mixing the two into a payback figure is how cost-benefit analyses get dismissed by the people who have to sign them off. So payback and NPV use the first two buckets only — and it still clears in 1.7 years.\n\n\nDoes it survive pessimism?\nThe interesting question isn’t what the model says at the central case. It’s how far you have to push the assumptions before the recommendation breaks.\n\nThe package pays back inside five years even at a 5% runtime reduction — half the bottom of the range documented for comparable bus-priority projects."
+  },
+  {
+    "objectID": "projects/mbta-equity-corridors.html#the-deck",
+    "href": "projects/mbta-equity-corridors.html#the-deck",
+    "title": "Fixing Boston’s Busiest Equity Corridors",
+    "section": "The deck",
+    "text": "The deck\nNine slides, eight minutes, in front of a judging panel at the end of a very long weekend. Click any slide to enlarge.\n\n       \n\n📥 Download the full deck as PDF"
+  },
+  {
+    "objectID": "projects/mbta-equity-corridors.html#a-note-on-what-came-after",
+    "href": "projects/mbta-equity-corridors.html#a-note-on-what-came-after",
+    "title": "Fixing Boston’s Busiest Equity Corridors",
+    "section": "A note on what came after",
+    "text": "A note on what came after\nThe original analysis notebooks were lost after the event. What survived was the memo, the deck, and a working document with the intermediate tables and part of the original GeoPandas code.\nRather than let the work disappear, I rebuilt it as a documented, tested Python package. The cost-benefit model is verified — it reproduces every published figure, and 42 tests pin it there so a refactor can’t quietly change the answer. The spatial pipeline is reconstructed but not re-executed, and the repository says so plainly.\nIt also documents three things that don’t reconcile, including a composite index whose published formula doesn’t reproduce its published value. That index is implemented as published, and the repository reports what it yields rather than back-fitting to the reported number.\n\nTeam · Anushri Gade, Rahul Tejannavar, Sahil Mittal Event · MIT Policy Hackathon 2025, Transportation track — second place Data · MBTA ridership and performance feeds, GTFS, US Census TIGER/Line and ACS, LEHD LODES, National Transit Database Tools · Python, pandas, GeoPandas, matplotlib, pytest"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Sahil Mittal",
@@ -32,13 +74,20 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "In progress\nAn analysis of my own Goodreads library — several years of ratings, dates and page counts. Partly an excuse to get fluent in pandas on data I actually care about, partly curiosity about whether my reading has changed in ways I’d notice without measuring.\nRepository\n\nMore projects will appear here as coursework and independent work produce things worth showing."
+    "text": "2nd place, MIT Policy Hackathon 2025\n\nEvery MBTA bus route, ranked by transit dependence weighted by ridership. The three highest-need corridors turned out to be among the slowest in the network. We modelled a $6.5M bus-priority package returning 1.23 million rider-hours a year, paying back in under two years — then rebuilt the whole analysis as a tested Python package after the original notebooks were lost.\nRead the full project →\nRepository · Policy memo · Deck"
+  },
+  {
+    "objectID": "projects.html#fixing-bostons-busiest-equity-corridors",
+    "href": "projects.html#fixing-bostons-busiest-equity-corridors",
+    "title": "Projects",
+    "section": "",
+    "text": "2nd place, MIT Policy Hackathon 2025\n\nEvery MBTA bus route, ranked by transit dependence weighted by ridership. The three highest-need corridors turned out to be among the slowest in the network. We modelled a $6.5M bus-priority package returning 1.23 million rider-hours a year, paying back in under two years — then rebuilt the whole analysis as a tested Python package after the original notebooks were lost.\nRead the full project →\nRepository · Policy memo · Deck"
   },
   {
     "objectID": "projects.html#reading-data-analysis",
     "href": "projects.html#reading-data-analysis",
     "title": "Projects",
-    "section": "",
-    "text": "In progress\nAn analysis of my own Goodreads library — several years of ratings, dates and page counts. Partly an excuse to get fluent in pandas on data I actually care about, partly curiosity about whether my reading has changed in ways I’d notice without measuring.\nRepository\n\nMore projects will appear here as coursework and independent work produce things worth showing."
+    "section": "Reading data analysis",
+    "text": "Reading data analysis\nIn progress\nAn analysis of my own Goodreads library — several years of ratings, dates and page counts. Partly an excuse to get fluent in pandas on data I actually care about, partly curiosity about whether my reading has changed in ways I’d notice without measuring.\nRepository\n\nMore projects will appear here as coursework and independent work produce things worth showing."
   }
 ]

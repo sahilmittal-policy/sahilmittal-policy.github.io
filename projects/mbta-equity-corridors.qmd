@@ -1,0 +1,175 @@
+---
+title: "Fixing Boston's Busiest Equity Corridors"
+subtitle: "A data-driven case for bus-priority investment on MBTA routes 23, 28 and 66"
+description: "Second place, MIT Policy Hackathon 2025. Ranked every MBTA bus route by transit dependence weighted by ridership, then built the cost-benefit case for a $6.5M bus-priority package."
+image: /images/mbta/social-card.png
+date: 2025-11-23
+categories: [transit policy, equity, cost-benefit analysis, Python]
+toc: true
+toc-depth: 2
+lightbox: true
+format:
+  html:
+    page-layout: full
+---
+
+::: {.project-hero}
+![](/images/mbta/slides/slide-01.png){.hero-slide fig-alt="Fixing Boston's Busiest Equity Corridors: Routes 23, 28 and 66"}
+:::
+
+::: {.stat-row}
+::: {.stat}
+[20%]{.stat-value}
+[faster trips from a proven bus-priority package]{.stat-label}
+:::
+::: {.stat}
+[1.23M]{.stat-value}
+[rider-hours returned every year]{.stat-label}
+:::
+::: {.stat}
+[1.7 yr]{.stat-value}
+[payback on MBTA cash flows alone]{.stat-label}
+:::
+::: {.stat}
+[$23.8M]{.stat-value}
+[10-year NPV, before rider benefit]{.stat-label}
+:::
+:::
+
+::: {.project-links}
+[📄 Policy memo](https://github.com/sahilmittal-policy/mbta-equity-corridors/blob/main/docs/policy-memo.md){.btn-project target="_blank"}
+[📊 Download the deck](/files/TartanSparks-MIT-Policy-Hackathon-2025.pdf){.btn-project target="_blank"}
+[💻 Code on GitHub](https://github.com/sahilmittal-policy/mbta-equity-corridors){.btn-project target="_blank"}
+:::
+
+---
+
+## The problem
+
+Greater Boston's bus network carries the region's most transit-dependent riders
+on some of its slowest and least reliable services. Black bus riders in Boston
+spend roughly **64 more hours a year** in transit than white riders.
+
+Over a weekend at the MIT Policy Hackathon, my teammates
+[Anushri Gade and Rahul Tejannavar]{.nowrap} and I asked three questions: which
+routes does that penalty fall hardest on, can it be fixed without a capital
+megaproject, and what would fixing it cost?
+
+## How we found the corridors
+
+Ranking routes by need alone rewards lightly-used shuttles through very poor
+neighbourhoods. Ranking by ridership alone rewards busy routes through affluent
+ones. We needed something that asked a blunter question: **where are the most
+equity-weighted riders?**
+
+So we built a **Transit Dependence Index** for every route in the network —
+population-weighted shares of zero-vehicle households, residents below 200% of
+the poverty line, non-white residents, and transit commuters, measured within an
+800 metre walkshed of every stop and normalised against the system average. Then
+we multiplied it by ridership.
+
+![Routes 28, 23 and 66 sit furthest out on both axes at once — that is what the product picks up.](/images/mbta/figures/fig02_equity_volume_scatter.png){.rounded fig-alt="Scatter plot of transit dependence index against weekday boardings"}
+
+Three routes — **28, 23 and 66** — came out first, second and third in the
+entire MBTA bus network. Then we checked what service those riders actually get.
+
+![](/images/mbta/figures/fig03_service_deficit.png){.rounded fig-alt="Bar chart of peak runtime and unreliability by route"}
+
+All three run longer than the median peak runtime. Route 66 takes nearly **49
+minutes** at peak with the worst on-time performance in the group.
+
+> The more you depend on the bus, the more you are punished by slow and
+> unreliable service.
+
+## Why it's a labour-market problem
+
+Using LEHD LODES employment microdata, we found the corridor is itself a major
+job centre — over 69,000 health and social assistance jobs sit inside it — and
+yet only about **one quarter** of the jobs held by corridor residents are located
+there. Residents work at more than 12,000 distinct workplace blocks.
+
+![](/images/mbta/figures/fig06_sector_composition.png){.rounded fig-alt="Corridor residents versus rest of Massachusetts by employment sector"}
+
+Most riders are passing through to somewhere else, usually via a rail transfer.
+That reframes a local transit intervention as a regional access problem, and it
+is the finding the recommendation rests on.
+
+## What it costs, and what it returns
+
+Not a megaproject. Dedicated lanes on congested segments, transit signal
+priority, queue jumps at bottlenecks, far-side stops and stop consolidation —
+tools Boston already deploys, at roughly $0.5M a mile. Ten miles of treatment,
+**$6.5 million** all in.
+
+The model keeps three benefit buckets separate, because they are not the same
+kind of money:
+
+| Bucket | Per year | In the payback? |
+|---|---:|:--:|
+| Net operating savings, after reinvesting half into service | $3.16M | ✅ |
+| New rail fare revenue from better bus–rail feeding | $0.56M | ✅ |
+| Rider time value (1.23M hours at $10–20/hr) | $12.3–24.5M | ❌ |
+
+Rider time is a societal benefit, not agency cash. Mixing the two into a payback
+figure is how cost-benefit analyses get dismissed by the people who have to sign
+them off. So payback and NPV use the first two buckets only — and it still
+clears in **1.7 years**.
+
+![](/images/mbta/figures/fig04_payback.png){.rounded fig-alt="Cumulative discounted net benefit crossing zero at 1.7 years"}
+
+### Does it survive pessimism?
+
+The interesting question isn't what the model says at the central case. It's how
+far you have to push the assumptions before the recommendation breaks.
+
+![](/images/mbta/figures/fig05_speed_sensitivity.png){.rounded fig-alt="Payback period and NPV across runtime reduction scenarios"}
+
+The package pays back inside five years even at a **5% runtime reduction** —
+half the bottom of the range documented for comparable bus-priority projects.
+
+---
+
+## The deck
+
+Nine slides, eight minutes, in front of a judging panel at the end of a very
+long weekend. Click any slide to enlarge.
+
+::: {.slide-gallery}
+![Why these corridors matter](/images/mbta/slides/slide-02.png){group="deck"}
+![How we identified equity corridors](/images/mbta/slides/slide-03.png){group="deck"}
+![Low wages, long trips, critical roles](/images/mbta/slides/slide-04.png){group="deck"}
+![A proven bus-priority toolkit](/images/mbta/slides/slide-05.png){group="deck"}
+![Fiscal case, part 1](/images/mbta/slides/slide-06.png){group="deck"}
+![Fiscal case, part 2](/images/mbta/slides/slide-07.png){group="deck"}
+![Implementation and risk mitigation](/images/mbta/slides/slide-08.png){group="deck"}
+![Thank you](/images/mbta/slides/slide-09.png){group="deck"}
+:::
+
+[📥 Download the full deck as PDF](/files/TartanSparks-MIT-Policy-Hackathon-2025.pdf){target="_blank"}
+
+---
+
+## A note on what came after
+
+The original analysis notebooks were lost after the event. What survived was the
+memo, the deck, and a working document with the intermediate tables and part of
+the original GeoPandas code.
+
+Rather than let the work disappear, I rebuilt it as a
+[documented, tested Python package](https://github.com/sahilmittal-policy/mbta-equity-corridors).
+The cost-benefit model is verified — it reproduces every published figure, and
+42 tests pin it there so a refactor can't quietly change the answer. The spatial
+pipeline is reconstructed but not re-executed, and the repository says so
+plainly.
+
+It also documents three things that don't reconcile, including a composite index
+whose published formula doesn't reproduce its published value. That index is
+implemented **as published**, and the repository reports what it yields rather
+than back-fitting to the reported number.
+
+::: {.project-meta}
+**Team** · Anushri Gade, Rahul Tejannavar, Sahil Mittal
+**Event** · MIT Policy Hackathon 2025, Transportation track — second place
+**Data** · MBTA ridership and performance feeds, GTFS, US Census TIGER/Line and ACS, LEHD LODES, National Transit Database
+**Tools** · Python, pandas, GeoPandas, matplotlib, pytest
+:::
