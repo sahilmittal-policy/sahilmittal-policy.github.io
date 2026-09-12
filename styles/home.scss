@@ -1,0 +1,452 @@
+/*-- scss:defaults --*/
+
+$ink: #1f2933;
+$body: #3f4855;
+$muted: #6f7883;
+$rule: #e4e8ec;
+$accent: #0e7c7b;
+
+/*-- scss:rules --*/
+
+/* ------------------------------------------------------------------
+   Page width. page-layout: full removes Quarto's grid constraint, so
+   the column is re-centred here at a width that fits four cards.
+   ------------------------------------------------------------------ */
+
+main#quarto-document-content {
+  max-width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+/* ------------------------------------------------------------------
+   Weight reset. The theme pushes heavier weights into some contexts,
+   which reads as bold body copy. Everything here is explicit.
+   ------------------------------------------------------------------ */
+
+main#quarto-document-content {
+  p,
+  li,
+  div,
+  span,
+  figcaption {
+    font-weight: 400;
+  }
+
+  strong,
+  b {
+    font-weight: 600;
+    color: $ink;
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-weight: 600;
+  }
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  gap: 2.6rem;
+  align-items: start;
+  margin: 1.5rem 0 3.4rem;
+}
+
+.hero-photo img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.hero-name {
+  font-size: 2.3rem;
+  font-weight: 700 !important;
+  letter-spacing: -0.022em;
+  margin: -0.35rem 0 0.15rem;
+  border: 0;
+  padding: 0;
+}
+
+.hero-tagline {
+  display: block;
+  font-size: 1.02rem;
+  color: $muted;
+  margin-bottom: 1.35rem;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  line-height: 1.72;
+  color: $body;
+  margin-bottom: 0.95rem;
+  max-width: 44rem;
+}
+
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.4rem;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.42rem 0.85rem;
+    border: 1px solid $rule;
+    border-radius: 7px;
+    font-size: 0.87rem;
+    color: $ink !important;
+    text-decoration: none !important;
+    transition: all 0.15s ease;
+  }
+
+  a:hover {
+    border-color: $accent;
+    color: $accent !important;
+  }
+}
+
+@media (max-width: 780px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .hero-photo {
+    max-width: 170px;
+  }
+}
+
+/* ---------- Section headings ---------- */
+
+.section-heading {
+  font-size: 1.22rem;
+  font-weight: 600;
+  letter-spacing: -0.008em;
+  color: $ink;
+  margin: 3.2rem 0 1.35rem;
+  padding-bottom: 0.55rem;
+  border-bottom: 1px solid $rule;
+}
+
+/* Body copy in constrained blocks stays readable, not full-width. */
+.prose p {
+  max-width: 42rem;
+  font-size: 1rem;
+  line-height: 1.72;
+  color: $body;
+}
+
+/* ---------- "Right now" cards ---------- */
+
+.now-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.1rem;
+}
+
+.now-card {
+  border: 1px solid $rule;
+  border-radius: 10px;
+  padding: 1.25rem 1.3rem 1.35rem;
+  background: #fff;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.07);
+  }
+
+  h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0.6rem 0 0.5rem;
+    color: $ink;
+  }
+
+  p {
+    font-size: 0.89rem;
+    line-height: 1.62;
+    color: $body;
+    margin-bottom: 0.55rem;
+  }
+
+  a {
+    font-size: 0.87rem;
+    font-weight: 500;
+    color: $accent;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.now-tag {
+  display: inline-block;
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: $accent;
+  background: rgba(14, 124, 123, 0.09);
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+}
+
+@media (max-width: 860px) {
+  .now-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- Institutions ---------- */
+
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.logo-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $rule;
+  border-radius: 10px;
+  padding: 1.15rem 1rem 1.05rem;
+  background: #fff;
+  text-align: center;
+  transition: box-shadow 0.18s ease;
+
+  &:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  }
+}
+
+/* Fixed-height well so four logos of different proportions optically align. */
+.logo-well {
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.9rem;
+}
+
+/* Wordmarks are wide: cap width as well as height. */
+.logo-wm {
+  max-height: 28px;
+  max-width: 130px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Square marks carry more weight, so they run smaller. */
+.logo-sq {
+  max-height: 38px;
+  max-width: 38px;
+  width: auto;
+  object-fit: contain;
+}
+
+.logo-name {
+  font-size: 0.88rem;
+  font-weight: 600 !important;
+  color: $ink;
+  line-height: 1.3;
+}
+
+.logo-role {
+  flex-grow: 1;
+  font-size: 0.76rem;
+  color: $muted;
+  line-height: 1.45;
+  margin-top: 0.3rem;
+}
+
+.logo-years {
+  font-size: 0.72rem;
+  color: lighten($muted, 10%);
+  letter-spacing: 0.03em;
+  margin-top: 0.7rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid $rule;
+}
+
+@media (max-width: 860px) {
+  .logo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 440px) {
+  .logo-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- Photo + text split ---------- */
+
+.split {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.rounded-photo,
+img.rounded-photo {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.photo-caption {
+  display: block;
+  font-size: 0.79rem;
+  color: $muted;
+  line-height: 1.5;
+  margin-top: 0.6rem;
+}
+
+.split-text p {
+  font-size: 1rem;
+  line-height: 1.72;
+  color: $body;
+}
+
+@media (max-width: 860px) {
+  .split {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+}
+
+/* ---------- Elsewhere ---------- */
+
+.elsewhere {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+}
+
+.elsewhere-item {
+  padding-left: 0.95rem;
+  border-left: 2px solid $rule;
+  transition: border-color 0.18s ease;
+
+  &:hover {
+    border-left-color: $accent;
+  }
+
+  p {
+    font-size: 0.89rem;
+    line-height: 1.62;
+    color: $body;
+    margin-bottom: 0;
+  }
+}
+
+.elsewhere-title {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600 !important;
+  color: $ink;
+  margin-bottom: 0.35rem;
+}
+
+@media (max-width: 860px) {
+  .elsewhere {
+    grid-template-columns: 1fr;
+    gap: 1.1rem;
+  }
+}
+
+/* ---------- Degree minor ---------- */
+
+.logo-minor {
+  display: inline-block;
+  margin-top: 0.15rem;
+  font-size: 0.71rem;
+  color: lighten($muted, 8%);
+}
+
+/* ---------- Teaching: course list ---------- */
+
+.course-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.course {
+  border: 1px solid $rule;
+  border-radius: 10px;
+  padding: 1.1rem 1.2rem 1.15rem;
+  background: #fff;
+  border-left: 3px solid $rule;
+  transition: border-left-color 0.18s ease, box-shadow 0.18s ease;
+
+  &:hover {
+    border-left-color: $accent;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  }
+}
+
+.course-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.4rem;
+}
+
+.course-title {
+  font-size: 0.94rem;
+  font-weight: 600 !important;
+  color: $ink;
+  line-height: 1.35;
+}
+
+.course-when {
+  font-size: 0.72rem;
+  color: lighten($muted, 10%);
+  white-space: nowrap;
+}
+
+.course-prof {
+  font-size: 0.79rem;
+  color: $accent;
+  margin-top: 0.25rem;
+}
+
+.course-note {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: $body;
+  margin-top: 0.55rem;
+}
+
+@media (max-width: 860px) {
+  .course-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- Small polish ---------- */
+
+/* Stop anchor jumps hiding content under the sticky navbar. */
+.section-heading {
+  scroll-margin-top: 5rem;
+}
+
+main#quarto-document-content a:not(.hero-links a):not(.btn-project) {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
