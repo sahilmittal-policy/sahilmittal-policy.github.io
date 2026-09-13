@@ -108,7 +108,7 @@ absorbs the shock of major life transitions while nonfiction holds steady.
   <div class="logo-card">
     <div class="logo-well"><img src="/images/logos/nit-trichy.png" alt="NIT Tiruchirappalli" class="logo-sq"></div>
     <div class="logo-name">NIT Tiruchirappalli</div>
-    <div class="logo-role">B.Tech, Electrical &amp; Electronics Engineering<br><span class="logo-minor">Minor in Physics</span></div>
+    <div class="logo-role">BTech, Electrical &amp; Electronics Engineering<br><span class="logo-minor">Minor in Physics</span></div>
     <div class="logo-years">2017&ndash;21</div>
   </div>
 
@@ -120,17 +120,16 @@ absorbs the shock of major life transitions while nonfiction holds steady.
 ::: {.split}
 
 ::: {.split-media}
-![](/images/bridge-cohort.jpg){.rounded-photo fig-alt="The inaugural BRIDGE cohort at the kickoff session"}
-[The inaugural BRIDGE cohort at the kickoff session, University of Pittsburgh, September 2026.]{.photo-caption}
+![](/images/bridge-cohort.jpg){.rounded-photo fig-alt="Inaugural BRIDGE cohort at the kickoff session"}
+[Inaugural BRIDGE cohort at the kickoff session, University of Pittsburgh, September 2026.]{.photo-caption}
 :::
 
 ::: {.split-text}
-Policy analysis assumes that someone, eventually, will be persuaded. BRIDGE is
-eight months of taking that assumption seriously — workshops on civil discourse,
-mediation and conflict management, run jointly by Heinz and Pitt SPIA, ending in
-a student-led campus event next spring.
-
-It's the part of the training that doesn't show up in a regression table.
+I am a participant in the BRIDGE Program, an eight-month co-curricular fellowship at Carnegie Mellon's Heinz College, 
+built on the college's Deliberative Discourse Initiative and its partnership with the University of Pittsburgh School of Public and International Affairs. 
+The program combines workshops, experiential learning, and collaborative projects to build practical capacity in civil discourse, dialogue facilitation, mediation, conflict management, and civic leadership. 
+For me, it is a natural complement to my policy coursework: the analytical side of the degree tells you what a policy does, 
+while BRIDGE is about the harder work of getting people with real disagreements into a room and keeping the conversation productive. That skill set feels increasingly central to whether evidence-based policy actually gets adopted. 
 :::
 
 :::
@@ -138,9 +137,8 @@ It's the part of the training that doesn't show up in a regression table.
 ## Teaching {.section-heading}
 
 ::: {.prose}
-Teaching is where the education-policy interest actually started. It is one thing
-to read that pedagogy matters, another to watch a structured reasoning task land
-with thirty students and miss five.
+My interest in education policy started in the classroom. 
+Teaching showed me how much education shapes social mobility and how much of that potential is limited by conditions no individual controls. I moved toward policy to work on those conditions directly.
 :::
 
 ```{=html}
@@ -214,8 +212,7 @@ LGBTQ+ inclusion initiative.
 ## Off the clock {.section-heading}
 
 ::: {.prose}
-I read a lot and keep obsessive records of it, which is how the Goodreads project
-started. I cook mostly by improvisation — whatever the pantry has, whatever it
-turns into. Both are, I suspect, the same instinct: a preference for working with
-what's actually in front of you rather than what the plan called for.
+I read a lot and love talking about it with everyone.
+
+Currently reading: the Hunger Games series.
 :::
