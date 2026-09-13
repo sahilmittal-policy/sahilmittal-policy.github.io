@@ -15,7 +15,7 @@ toc: false
 
 # Sahil Mittal {.hero-name}
 
-[Labor economics and education policy]{.hero-tagline}
+[Interested in Labor Economics, Transit and Education Policy]{.hero-tagline}
 
 I'm a first-year MSPPM-DA student at Carnegie Mellon's Heinz College, working on
 empirical questions in labor economics and education policy.
