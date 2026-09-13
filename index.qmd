@@ -17,18 +17,15 @@ toc: false
 
 [Interested in Labor Economics, Transit and Education Policy]{.hero-tagline}
 
-I'm a first-year MSPPM-DA student at Carnegie Mellon's Heinz College, working on
-empirical questions in labor economics and education policy.
+I am a first-year MS in Public Policy and Management (Data Analytics) student at Carnegie Mellon University's Heinz College, studying economics, programming, Data Science and policy analysis. Interested in labor economics, transit and education policy. 
 
-I spent four years at Plaksha University, a new private institution in Punjab.
-Two of them went into building its Office of Corporate Partnerships and Careers
-from nothing — strategy, operations and employer relationships for 700+ students
-at a university with no placement record to trade on. The last year was in the
-Vice Chancellor's office, on institutional strategy and applied governance
+I spent four years at Plaksha University, a new age university in India, trying to reimagine technology education in India.
+Two years went into building the inaugral Office of Corporate Partnerships and Careers
+from nothing — strategy, operations and employer relationships for 700+ students. The last year was in the
+Vice Chancellor's office, on institutional strategy, finanical modeling, cross-department projects and applied governance
 projects with Invest Punjab.
 
-Watching which students got hired, and which didn't, is what moved me from
-operating inside a labor market to studying one.
+Along with this I spent my time as Teaching Fellow for various courses at Plaksha teaching both undergraduate and Graduate students. I have background in Electrical and Electronics Engineering, with a minor in Physics. After engineering, I did Young India Fellowship at Ashoka University, spending a year studying various courses across History, Philosophy, Economics, Public Policy and Liberal Arts. 
 
 ```{=html}
 <div class="hero-links">
